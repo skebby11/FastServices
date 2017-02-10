@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /conta.log
+Disallow: /anon.htm
+Disallow: /palak.html

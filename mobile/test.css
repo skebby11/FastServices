@@ -1,0 +1,29 @@
+@media all and (min-width:600px){
+ aside.first{
+ width:50%;
+ float:left;
+ }
+ aside.last{
+ width:50%;
+ float:right;
+ }
+ }
+ @media all and (min-width:960px){
+ content{
+ width:60%;
+ float:left;
+ margin-left:20%
+ }
+ aside.first{
+ width:20%;
+ margin-left:-80%;
+ float:left;
+ }
+ aside.last{
+ width:20%;
+ float:right;
+ }
+ }
+ .no-mobile {
+   display: none;
+}

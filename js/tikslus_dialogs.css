@@ -1,0 +1,240 @@
+#tdialog{
+
+height:auto;
+z-index:80000;
+color:#000;
+display:none;
+position:absolute;
+background-color:#fff;
+
+}
+
+.outer-overlay {
+-moz-background-clip:border;
+-moz-background-origin:padding;
+-moz-background-size:auto auto;
+background-attachment:scroll;
+background-color:#666666;
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+filter: alpha(opacity=50);
+/* Older than Firefox 0.9 */
+-moz-opacity:0.5;
+/* Safari 1.x (pre WebKit!) */
+-khtml-opacity: 0.5;
+/* Firefox 0.9+, Safari 2?, Chrome any?
+/* Opera 9+, IE 9+ */
+opacity: 0.5;
+z-index:50000;
+}
+
+.shadow{
+    -moz-box-shadow: 0 0 15px 1px #505050;
+	-webkit-box-shadow: 0px 5px 15px #505050;
+	-o-box-shadow: 0 0 15px 1px #505050;
+}
+
+#tdialog .title{
+ background-color: #EEEEEE;
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 14px;
+    height: 24px;
+    padding-left: 40px;
+    padding-top: 5px;
+}
+
+#tdialog #icon{
+position:absolute;
+width:24px;
+height:24px;
+left:2px;
+top:2px;
+}
+
+.nullfyicon{
+margin-left:0px;
+margin-top:0px;
+width:0px;
+height:0px;
+}
+.error{
+background-image:url('images/icons/error.png');
+background-repeat:no-repeat;
+width:24px;
+height:24px;
+}
+
+.info{
+background-image:url('images/icons/info.png');
+background-repeat:no-repeat;
+width:24px;
+height:24px;
+}
+.warning{
+background-image:url('images/icons/warning.png');
+background-repeat:no-repeat;
+width:24px;
+height:24px;
+}
+
+.alert{
+background-image:url('images/icons/warning.png');
+background-repeat:no-repeat;
+width:24px;
+height:24px;
+}
+
+.help{
+background-image:url('images/icons/help.png');
+background-repeat:no-repeat;
+width:24px;
+height:24px;
+}
+
+.confirm{
+background-image:url('images/icons/tick.png');
+background-repeat:no-repeat;
+width:24px;
+height:24px;
+}
+
+.lock{
+background-image:url('images/icons/lock.png');
+background-repeat:no-repeat;
+width:24px;
+height:24px;
+}
+
+.chat{
+background-image:url('images/icons/chat.png');
+background-repeat:no-repeat;
+width:24px;
+height:24px;
+}
+
+.clock{
+background-image:url('images/icons/clock.png');
+background-repeat:no-repeat;
+width:24px;
+height:24px;
+}
+
+.form{
+background-image:url('images/icons/form.png');
+background-repeat:no-repeat;
+width:24px;
+height:24px;
+}
+
+
+#tdialog .buttons{
+display:block;
+border-top:1px solid #eee;
+height:30px;
+}
+
+.buttons ul{
+ float: right;
+    height: 30px;
+    list-style: none outside none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+   }
+.buttons ul li{
+float:left;
+margin-right:10px;
+}
+
+.button_ok ,.button_cancel,.button_confirm,.button {
+    background-color: #BBBBBB;
+    color: #000;
+    display: block;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    min-width: 80px;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+	background-image:url('images/button_bk.png');
+	background-repeat:repeat-x;
+	-moz-border-radius: 3px;
+border-radius: 3px;
+	
+}
+
+.button:hover,.button_ok:hover,.button_cancel:hover,.button_confirm:hover {
+	background-image:url('images/button_bk_hover.png');
+	background-repeat:repeat-x;
+	color:#fff;
+}
+
+#tdialog .content{
+width:360px;
+min-height:50px;
+padding:5px;
+min-width:360px;
+min-height:50px;
+}
+#tdialog .controls
+{
+position:absolute;
+right:5px;
+top:1px;
+}
+
+#tdialog .cross{
+background-image:url('images/close.png');
+background-repeat:no-repeat;
+width:20px;
+height:20px;
+display:block;
+margin-top:2px;
+}
+
+#tdialog   a.cross:hover{
+background-image:url('images/close_hover.png');
+background-repeat:no-repeat;
+width:20px;
+height:20px;
+display:block;
+}
+
+
+
+#tdialog .minimize{
+background-image:url('images/minimize.png');
+background-repeat:no-repeat;
+width:20px;
+height:20px;
+display:block;
+position:absolute;
+right:23px;
+margin-top:2px;
+top:0px;
+}
+
+#tdialog .minimize:hover{
+background-image:url('images/minimize_hover.png');
+background-repeat:no-repeat;
+width:20px;
+height:20px;
+
+}
+
+#tdialog .maximize{
+background-image:url('images/maximize.png');
+background-repeat:no-repeat;
+width:20px;
+height:20px;
+display:block;
+position:absolute;
+right:23px;
+margin-top:2px;
+}
+
+#tdialog .maximize:hover{
+background-image:url('images/maximize_hover.png');
+background-repeat:no-repeat;
+width:20px;
+height:20px;
+}
